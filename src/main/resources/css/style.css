@@ -1,0 +1,39 @@
+.root {
+    -fx-background-color: #ffffff; /* Light background */
+}
+
+.label {
+    -fx-font-size: 14;
+    -fx-text-fill: #333333; /* Dark gray text */
+}
+
+.combo-box {
+    -fx-background-color: #f0f4f8;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.button {
+    -fx-background-color: #0078d7; /* Blue background for buttons */
+    -fx-background-radius: 10; /* Rounded corners */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-padding: 5 15; /* Spacing inside the button */
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #005a9e; /* Darker blue on hover */
+    -fx-text-fill: #ffffff;
+}
+
+.list-view {
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-background-color: #f7f7f7;
+}
+
+.list-view:hover {
+    -fx-background-color: #e0eaf5; /* Light blue on hover */
+}

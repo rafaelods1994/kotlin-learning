@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="15"
+      alignment="CENTER"
+      prefWidth="600" prefHeight="400">
+    <Label text="Edit Task" style="-fx-font-size: 20; -fx-font-weight: bold;" />
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Title:" />
+        <TextField fx:id="titleField" promptText="Enter task title" prefWidth="400" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Description:" />
+        <TextField fx:id="descriptionField" promptText="Enter task description" prefWidth="400" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Status:" />
+        <ComboBox fx:id="statusField" prefWidth="200" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Priority:" />
+        <ComboBox fx:id="priorityField" prefWidth="200" />
+    </HBox>
+
+    <Button text="Save" onAction="#onSaveTask" />
+</VBox>

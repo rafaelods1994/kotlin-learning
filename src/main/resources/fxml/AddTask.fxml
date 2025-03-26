@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.rafael.hexagonal.javafxdemo.view.AddTaskController"
+      spacing="10" alignment="CENTER" prefWidth="400" prefHeight="300">
+    <Label text="Add New Task" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="titleField" promptText="Enter title"/>
+    <TextField fx:id="descriptionField" promptText="Enter description"/>
+
+    <ComboBox fx:id="statusField" promptText="Select status">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="PENDING"/>
+                <String fx:value="IN_PROGRESS"/>
+                <String fx:value="COMPLETED"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <ComboBox fx:id="priorityField" promptText="Select priority">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="LOW"/>
+                <String fx:value="MEDIUM"/>
+                <String fx:value="HIGH"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <Button text="Save Task" onAction="#onSaveTask"/>
+</VBox>
